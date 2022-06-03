@@ -1,8 +1,19 @@
 #img_bann{
-    object-fit: cover;
-    object-position: center center;
-    width: 400px;
+
+    
+     width: 100%;
+    /* margin-left: -25vh;*/
+     height: 100%;
+     object-fit: cover;
 }
+
+#imgdiv{
+    width: 100%;
+    height: 100%;
+    background: blue;
+   
+}
+
 
 body{
     background: red;

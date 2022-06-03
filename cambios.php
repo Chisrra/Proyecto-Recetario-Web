@@ -22,10 +22,6 @@
         <img id="img_bann" src="https://images.squarespace-cdn.com/content/v1/52c6f529e4b001bd32397de6/1436183811286-C375KU5TBN5C4A0QT91D/image-asset.jpeg?format=1000w">
 
     </div>
-
-    <div class="container">
-
-    </div>
 </body>
 
 </html>

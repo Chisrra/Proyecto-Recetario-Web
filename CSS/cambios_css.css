@@ -1,8 +1,10 @@
 #img_bann{
     object-fit: cover;
     object-position: center center;
+    width: 400px;
 }
 
 body{
     color: red;
 }
+

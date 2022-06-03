@@ -13,6 +13,6 @@
     <link rel="stylesheet" href="CSS\index_css.css">
 </head>
 <body>
-    holas
+    
 </body>
 </html>

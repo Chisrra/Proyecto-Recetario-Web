@@ -1,12 +1,12 @@
-/*.wrampper {
+.wrampper {
     display: flex;
     position: relative;
 }
 
 .wrampper .sidebar {
     position: fixed;
-    width: 10vh;
+    width: 40vh;
     height: 100%;
     background-color: #c49482;
     padding: 1vh 0;
-}*/
+}

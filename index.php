@@ -1,5 +1,6 @@
 <?php
     require_once "conexion.php";
+    require_once "menu-desplegable.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,8 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario | Inicio</title>
+    <link rel="stylesheet" href="CSS\index_css.css">
 </head>
 <body>
-    
+    holas
 </body>
 </html>

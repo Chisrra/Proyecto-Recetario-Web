@@ -6,11 +6,11 @@
         <div class="wrampper">
             <div class="sidebar">
                 <ul>
-                    <li><a href="#"></a>Logo</li>
-                    <li><a href="#"></a>Crear receta</li>
-                    <li><a href="#"></a>Mis recetas</li>
-                    <li><a href="#"></a>Explorar más recetas</li>
-                    <li><a href="#"></a>Cerrar sesión</li>
+                    <li><a href="#" style="display: flex;"><h1>Recetario</h1></a></li>
+                    <li><a href="#">Crear receta</a></li>
+                    <li><a href="#">Mis recetas</a></li>
+                    <li><a href="#">Explorar más recetas</a></li>
+                    <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             </div>
         </div>

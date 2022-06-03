@@ -1,8 +1,5 @@
 <?php
-// --- Para poder hacer uso de la varible conn en sus archivos deben poner " require_once 'conexion.php'; " al inicio de sus archivos php ---
-// --- Es cómo si inyectaran o insertaran el codigo de este archivo en esa sección especifica del documento ---
-
-$conn = mysqli_connect("localhost", "root", "", "proyecto-resetario");
+$conn = mysqli_connect("localhost", "root", "", "proyecto-recetario");
 
 if (!$conn) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;

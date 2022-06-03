@@ -15,5 +15,6 @@ if (!$conn) {
 // echo "Información del host: " . mysqli_get_host_info($conn) . PHP_EOL;
 
 //Prueba de conexión con Git
+//SEXO
 //Prueba de GitHubDesktop
 ?>

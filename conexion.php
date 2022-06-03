@@ -13,8 +13,4 @@ if (!$conn) {
 
 // echo "Éxito: Se realizó una conexión apropiada a MySQL! La base de datos mi_bd es genial." . PHP_EOL;
 // echo "Información del host: " . mysqli_get_host_info($conn) . PHP_EOL;
-
-//Prueba de conexión con Git
-//SEXO
-//Prueba de GitHubDesktop
 ?>

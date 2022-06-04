@@ -24,10 +24,20 @@
     </div>
 
     <div class="container" id="formulario">
-        <form>
+        <form method="POST" >
         <div class="mb-3">
             <label for="id" class="form-label"><p id="labform">Id de la receta</p></label>
             <input type="text" class="form-control" id="id_input" >
+        </div>
+
+        <div class="mb-3">
+            <center>
+            <input type="button" value="Buscar receta" id="botonbusc" class="btn btn-outline-danger">
+            </center>
+        </div>
+
+        <div class="linea">
+
         </div>
 
         <div class="mb-3">
@@ -37,7 +47,7 @@
 
         <div class="mb-3">
             <label for="Descripcion" class="form-label"><p id="labform">Descripcion</p></label>
-            <input type="text" class="form-control" id="Descripcion_input" >
+            <textarea class="form-control" id="Descripcion_input" rows="3"></textarea>
         </div>
 
         <form>
@@ -48,7 +58,7 @@
 
         <div class="mb-3">
             <label for="Proceso" class="form-label"><p id="labform">Proceso</p></label>
-            <input type="text" class="form-control" id="Proceso_input" >
+            <textarea class="form-control" id="Proceso_input" rows="6"></textarea>
         </div>
 
         <div class="mb-3">

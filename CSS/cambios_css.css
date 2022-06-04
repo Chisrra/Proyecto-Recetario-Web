@@ -7,12 +7,12 @@
 }
 
 body{
-    background: #4c77b0;
+    background: #581252;
 }
 
 .container {
     padding: 5vh;
-    height: 85vh;
+    height: 120vh;
     border-radius: 5vh;
 }
 
@@ -53,4 +53,16 @@ p{
 
 #botonenv{
     margin-top: 5vh;
+}
+
+#botonbusc{
+    margin-bottom: 3vh;
+}
+
+.linea{
+    width: 100%;
+    height: 1vh;
+    background-color: #581252;
+    margin-bottom: 5vh;
+    border-radius: 2vh;
 }

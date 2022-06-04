@@ -6,7 +6,12 @@
         <div class="wrampper">
             <div class="sidebar">
                 <ul>
-                    <li><a href="#" style="display: flex;"><h1>Recetario</h1></a></li>
+                    <li><a href="#" style="display: flex;">
+                        <div id="inicio">
+                            <img src="IMG\logo.png" alt="logo.png">
+                            <h1>Recetario</h1>
+                        </div>
+                    </a></li>
                     <li><a href="#">Crear receta</a></li>
                     <li><a href="#">Mis recetas</a></li>
                     <li><a href="#">Explorar más recetas</a></li>

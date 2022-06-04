@@ -1,4 +1,10 @@
 body {
     background-color: #DCA58F;
     margin: 0;
+    display: flex;
+}
+
+#col2 {
+    background-color: red;
+    width: 100vh;
 }

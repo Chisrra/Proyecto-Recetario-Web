@@ -3,7 +3,6 @@ a {
 }
 a img {
     width: 10vh;
-    background-color: red;
 }
 
 
@@ -17,6 +16,12 @@ a img {
     height: 100%;
     background-color: #a06550;
     padding: 1vh 0;
+}
+#inicio {
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .wrampper .sidebar h1 {
     color: #fff;

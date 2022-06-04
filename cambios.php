@@ -18,10 +18,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <img id="img_bann" src="https://images.squarespace-cdn.com/content/v1/52c6f529e4b001bd32397de6/1436183811286-C375KU5TBN5C4A0QT91D/image-asset.jpeg?format=1000w">
-
+    <div class="container" id="banner">
+        <img id="img_bann" src="IMG/ImagenBanner_cambios.jpeg">
+        <b><p id="pban">CAMBIOS</p></b>
     </div>
+
+    <div class="container" id="formulario">
+        <form>
+        <div class="mb-3">
+            <label for="id" class="form-label"><p id="labform">Id de la receta</p></label>
+            <input type="text" class="form-control" id="id_input" >
+        </div>
+
+
+        </form>
+    </div>
+
+
 </body>
 
 </html>

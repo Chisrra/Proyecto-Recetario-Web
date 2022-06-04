@@ -6,10 +6,39 @@
 }
 
 body{
-    background: red;
+    background: #B04C6B;
 }
 
 .container {
     padding: 0;
     height: 30vh;
+    
+}
+
+#banner{
+    text-align: center;
+}
+
+
+#pban {
+    position: relative;
+    top:-30vh;
+    font-size: 20vh;
+}
+
+
+
+#formulario{
+    width: 50%;
+    margin-top: 5vh;
+}
+
+#labform{
+    background-color: #581252;
+    color: #ffffff;
+}
+
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

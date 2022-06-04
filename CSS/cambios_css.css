@@ -3,6 +3,7 @@
     /* margin-left: -25vh;*/
      height: 100%;
      object-fit: cover;
+     border-radius: 5vh;
 }
 
 body{
@@ -10,13 +11,15 @@ body{
 }
 
 .container {
-    padding: 0;
-    height: 30vh;
-    
+    padding: 5vh;
+    height: 85vh;
+    border-radius: 5vh;
 }
 
 #banner{
     text-align: center;
+    padding: 0%;
+    height: 35vh;
 }
 
 
@@ -30,16 +33,24 @@ body{
 }
 
 #formulario{
-    width: 50%;
+    width: 55vh;
     margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: #DCA58F;
 }
 
 #labform{
     background-color: #581252;
     color: #ffffff;
+    border-radius: 1vh;
+    padding: .5vh;
 }
 
 
 p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#botonenv{
+    margin-top: 5vh;
 }

@@ -30,7 +30,38 @@
             <input type="text" class="form-control" id="id_input" >
         </div>
 
+        <div class="mb-3">
+            <label for="nombre" class="form-label"><p id="labform">Nombre</p></label>
+            <input type="text" class="form-control" id="Nombre_input" >
+        </div>
 
+        <div class="mb-3">
+            <label for="Descripcion" class="form-label"><p id="labform">Descripcion</p></label>
+            <input type="text" class="form-control" id="Descripcion_input" >
+        </div>
+
+        <form>
+        <div class="mb-3">
+            <label for="Ingredientes" class="form-label"><p id="labform">Ingredientes</p></label>
+            <input type="text" class="form-control" id="Ingredientes_input" >
+        </div>
+
+        <div class="mb-3">
+            <label for="Proceso" class="form-label"><p id="labform">Proceso</p></label>
+            <input type="text" class="form-control" id="Proceso_input" >
+        </div>
+
+        <div class="mb-3">
+            <label for="foto" class="form-label"><p id="labform">Imagen de la receta</p></label>
+            <input type="file" class="form-control" id="img_input" >
+        </div>
+       
+        <div class="mb-3">
+            <center>
+            <input type="button" value="Aceptar cambios" id="botonenv" class="btn btn-outline-danger">
+            </center>
+        </div>
+        
         </form>
     </div>
 

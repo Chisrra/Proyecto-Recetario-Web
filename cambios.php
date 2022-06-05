@@ -1,6 +1,8 @@
 <?php
     require_once "conexion.php";
-    
+
+    require_once "cambios_SQL.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -24,51 +26,56 @@
     </div>
 
     <div class="container" id="formulario">
-        <form method="POST" >
+        <form method="POST" action="cambios.php" enctype="multipart/form-data" >
         <div class="mb-3">
-            <label for="id" class="form-label"><p id="labform">Id de la receta</p></label>
-            <input type="text" class="form-control" id="id_input" >
+            <label for="id" class="form-label"><p id="labform"  >Id de la receta</p></label>
+            <input type="text" class="form-control" id="id_input" name="id" <?php if(isset($id)) { ?> value="<?php echo $id; ?>" <?php } ?>>
         </div>
 
         <div class="mb-3">
             <center>
-            <input type="button" value="Buscar receta" id="botonbusc" class="btn btn-outline-danger">
+            <input type="submit" value="Buscar receta" id="botonbusc" class="btn btn-outline-danger" name="boton_buscar">
             </center>
         </div>
 
         <div class="linea">
 
         </div>
+        <?php
+
+        ?>
 
         <div class="mb-3">
             <label for="nombre" class="form-label"><p id="labform">Nombre</p></label>
-            <input type="text" class="form-control" id="Nombre_input" >
+            <input type="text" class="form-control" id="Nombre_input" name="nombre" <?php if(isset($nombre)) { ?> value="<?php echo $nombre; ?>" <?php } ?>>
         </div>
 
         <div class="mb-3">
             <label for="Descripcion" class="form-label"><p id="labform">Descripcion</p></label>
-            <textarea class="form-control" id="Descripcion_input" rows="3"></textarea>
+            <textarea class="form-control" id="Descripcion_input" rows="3" name="descripcion" ><?php if(isset($descripcion)) { echo $descripcion; ?> <?php } ?></textarea>
         </div>
 
         <form>
         <div class="mb-3">
             <label for="Ingredientes" class="form-label"><p id="labform">Ingredientes</p></label>
-            <input type="text" class="form-control" id="Ingredientes_input" >
+            <input type="text" class="form-control" id="Ingredientes_input" name="ingredientes" <?php if(isset($ingredientes)) { ?> value="<?php echo $ingredientes; ?>" <?php } ?>>
         </div>
 
         <div class="mb-3">
             <label for="Proceso" class="form-label"><p id="labform">Proceso</p></label>
-            <textarea class="form-control" id="Proceso_input" rows="6"></textarea>
+            <textarea class="form-control" id="Proceso_input" rows="6" name="proceso"><?php if(isset($proceso)) { echo $proceso; ?> <?php } ?></textarea>
         </div>
 
         <div class="mb-3">
             <label for="foto" class="form-label"><p id="labform">Imagen de la receta</p></label>
-            <input type="file" class="form-control" id="img_input" >
+            <div class="imgreceta"><img  <?php if(isset($foto)) { ?> src="data:image/jpg;base64,<?php echo base64_encode( $foto); ?>" <?php } ?>></div>
+            <label for="cambiarfoto" class="form-label"><p id="labform">Seleccionar una foto nueva...</p></label>
+            <input type="file" class="form-control" id="img_input"  name="receta" >
         </div>
        
         <div class="mb-3">
             <center>
-            <input type="button" value="Aceptar cambios" id="botonenv" class="btn btn-outline-danger">
+            <input type="submit" value="Aceptar cambios" id="botonenv" class="btn btn-outline-danger" name="boton_enviar">
             </center>
         </div>
         

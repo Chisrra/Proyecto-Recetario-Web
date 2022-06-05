@@ -51,8 +51,8 @@
                     $result = mysqli_query($conn,$query);
              
                 }
-
-                $dataTime = date("Y-m-d H:i:s");
+                date_default_timezone_set('America/Mexico_City');
+                $dataTime = date("d-m-Y h:i:s a",time());
 
                 
                 $nombre=$_POST['nombre'];

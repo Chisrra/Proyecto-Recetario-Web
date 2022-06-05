@@ -69,7 +69,17 @@
                     
                     echo '<script>alert("cambios realizados!!!");</script>';
                 }
-                    
+                
+                if($var==true){
+                
+                    //header('Location: index.php');
+                    echo '<script>
+                        setTimeout(function () {
+                        window.location.href= "index.php";
+                    },1);</script>';
+                    die();
+                }    
+
                 
             }
             
@@ -78,15 +88,6 @@
         
     }
 
-    if($var==true){
-    
-        //header('Location: index.php');
-        echo '<script>
-            setTimeout(function () {
-            window.location.href= "index.php";
-         },1);</script>';
-        die();
-    }
 
     
 

@@ -1,7 +1,4 @@
-<?php
-    require_once "conexion.php";
-?>
-
+<?php?>
 <!DOCTYPE html>
 <html lang="es">
     <head>

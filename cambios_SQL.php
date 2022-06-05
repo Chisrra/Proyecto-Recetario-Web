@@ -1,6 +1,7 @@
 
 <?php
     require_once "conexion.php";
+    
 
     if (array_key_exists("id",$_POST)){
         if(isset($_POST["boton_buscar"])){
@@ -9,7 +10,7 @@
                 echo '<script>alert("ingrese un id");</script>';
             }else{
                 $id=$_POST["id"];
-    
+                $var=false;
                 $sentencia="SELECT * FROM receta where id='$id'";
                 $ejecutar = mysqli_query($conn,$sentencia);
     
@@ -41,7 +42,7 @@
                 echo '<script>alert("los campos deben estar llenos");</script>';
             }else{
                 $id=$_POST["id"];
-
+                $var=true;
                 if($_FILES['receta']['name']!=null){
                     $imagentam=$_FILES['receta']['size'];
                     $imagensubida=fopen($_FILES['receta']['tmp_name'],'r');
@@ -65,16 +66,29 @@
                 $ejecutar = mysqli_query($conn,$sentencia);
                 
                 if($ejecutar){
+                    
                     echo '<script>alert("cambios realizados!!!");</script>';
                 }
-                    
+                
+                if($var==true){
+                
+                    //header('Location: index.php');
+                    echo '<script>
+                        setTimeout(function () {
+                        window.location.href= "index.php";
+                    },1);</script>';
+                    die();
+                }    
+
                 
             }
+            
+            
         }
+        
     }
 
 
-
-
+    
 
 ?>

@@ -24,8 +24,11 @@
             <div id="perfil">
                 <img src="IMG\default_user.jpg" alt="def.jpg">
             </div>
-            <span id="nom_u">User</span>
+            <span id="nom_u">UsuarioRandom</span>
         </div>
+    </div>
+    <div id="subtitulo">
+        ¡ Compartiendo tradiciones en nuestros paladares !
     </div>
 
     <script src="JS\index_js.js"></script>

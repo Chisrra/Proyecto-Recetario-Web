@@ -8,11 +8,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Recetario | Inicio</title>
-    <link rel="stylesheet" href="CSS\index__css.css">
+    <link rel="stylesheet" href="CSS\index_css.css">
 </head>
 <body>
-    <div id="col2">
-        PRUEBAAAAAAAAAAAAAAA
+    <div class="banner">
+        <div id="title">Título</div>
+        <div id="user">
+            <div id="perfil"></div>
+        </div>
     </div>
 </body>
 </html>

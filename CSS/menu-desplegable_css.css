@@ -1,29 +1,97 @@
-a {
-    text-decoration: none;
-}
-a img {
-    width: 10vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Nunito:wght@500&display=swap');
 
-
-.wrampper {
-    display: flex;
-    position: relative;
-}
-.wrampper .sidebar {
+/* - Botón del sub-menú - */
+.btn-menu{
+    padding: 2vh 0 0 3vh;
     position: fixed;
-    width: 40vh;
-    height: 100%;
-    background-color: #a06550;
-    padding: 1vh 0;
 }
-#inicio {
-    margin-bottom: 3vh;
+.btn-menu label{
+    color: black;
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+/* - Sub-menú - */
+#btn-menu {
+    display: none;
+} /* Check-box */
+.container-menu{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    transition: all 200ms ease;
+    opacity: 0;
+    visibility: hidden;
+} /* Sombreado */
+.cont-menu{
+    width: 100%;
+    max-width: 40vh;
+    background: #1c1c1c;
+    height: 100%;
+    position: relative;
+    transition: all 200ms ease;
+    transform: translateX(-100%);
+} /* Menú */
+.cont-menu nav{
+    transform: translateY(15%);
+    position: relative;
+    top: -1vh;
+} /* Enlistado */
+.cont-menu nav a{
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vh;
+    display: block;
+    text-decoration: none;
+    padding: 2vh;
+    color: #c7c7c7;
+    border-left: 0.5vh solid transparent;
+    transition: all 150ms ease;
+} /* Border lateral tras hover */
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}  /* Efecto hover del link */
+.cont-menu label{
+    position: absolute;
+    right: 2vh;
+    top: 1.5vh;
+    cursor: pointer;
+    font-size: 2.5vh;
+}  /* Botón salir */
+
+/* - Eventos - */
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+#logo {
+    border: none;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.wrampper .sidebar h1 {
-    color: #fff;
-    margin: 0;
+#logo img {
+    width: 8vh;
+    margin-right: 2vh;
+}
+#logo span {
+    font-family: 'Flavors', cursive;
+    font-size: 5vh;
+    padding-top: 1vh;
+}
+#close {
+    position: relative;
+    top: 48vh;
+    color: rgb(255, 158, 158);
+}
+#close:hover{
+    border-left: 5px solid #ff2b2b;
+    background: #3f1111;
+    color: white;
 }

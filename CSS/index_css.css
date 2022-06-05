@@ -1,0 +1,31 @@
+body {
+    background-color: #DCA58F;
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(255,255,255,0.3);
+    display: flex;
+    justify-content: right;
+}
+.banner div {
+    height: 100%;
+}
+#title {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user {
+    width: 5%;
+    padding: 3vh 1vh 0 1vh;
+}
+#perfil {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: 1px dotted black;
+}

@@ -12,7 +12,8 @@ body{
 
 .container {
     padding: 5vh;
-    height: 210vh;
+    height: auto;
+    
     border-radius: 5vh;
 }
 

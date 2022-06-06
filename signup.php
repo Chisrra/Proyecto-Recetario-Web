@@ -96,6 +96,7 @@ if (isset($_POST['Registro'])) {
                 alert("¡Se ha registrado con exito! :)");
                 // location.href="../Proyecto-Recetario-Web";
                 </script>';
+                mysqli_close($conn);
                 header("Location: ../Proyecto-Recetario-Web",TRUE,301);
                 exit();
             }

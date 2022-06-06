@@ -10,4 +10,4 @@ Al finalizar sus operaciones por favor usen la instracción ' mysqli_close($conn
 
 ### Aplicar estilo al sub-menú
 De ser que su página contenga el menú desplegable, agregar en su head el siguiente link de estilos:
-link rel="stylesheet" href="CSS\menu-desplegable_css.css"
+<link rel="stylesheet" href="CSS\menu-desplegable_css.css">

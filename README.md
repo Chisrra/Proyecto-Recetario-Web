@@ -10,5 +10,5 @@ Al finalizar sus operaciones por favor usen la instracción ***' mysqli_close($c
 
 ### Como agregar ' menu-desplegable.php '
 Para poder hacer uso del menu despleglable en sus paginas tienen que hacer lo siguiente.
-1. Deben poner **<?php require_once "menu-desplegable.php"; ?>** en la primera linea de codigo dentro del ***body*** de sus documentos *HTML*
-2. Deben poner **<link rel="stylesheet" href="CSS\menu-desplegable_css.css">** dentro de sus ***<head></head>*** de los documentos *HTML*.
+1. Deben poner **' <?php require_once "menu-desplegable.php"; ?> '** en la primera linea de codigo dentro del ***body*** de sus documentos *HTML*
+2. Deben poner **' <link rel="stylesheet" href="CSS\menu-desplegable_css.css"> '** dentro de sus ***<head></head>*** de los documentos *HTML*.

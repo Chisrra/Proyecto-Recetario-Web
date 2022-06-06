@@ -68,7 +68,7 @@
 
         <div class="mb-3">
             <label for="foto" class="form-label"><p id="labform">Imagen de la receta</p></label>
-            <div class="imgreceta"><img  <?php if(isset($foto)) {  $tipo=$_FILES['receta']['type']; ?> src="data:image/<?php$tipo?>;base64,<?php echo base64_encode( $foto); ?>" <?php } ?>></div>
+            <div class="imgreceta"><img  <?php if(isset($foto)) {  $tipo=$_FILES['receta']['type']; ?> src="data:image/<?php $tipo;?>;base64,<?php echo base64_encode( $foto); ?>" <?php } ?>></div>
             <label for="cambiarfoto" class="form-label"><p id="labform">Seleccionar una foto nueva...</p></label>
             <input type="file" class="form-control" id="img_input"  name="receta" >
         </div>

@@ -9,6 +9,7 @@
     <title>Recetario | Inicio</title>
     <link rel="icon" href="IMG/logo.ico">
     <link rel="stylesheet" href="CSS\index_css.css">
+    <link rel="stylesheet" href="CSS\menu-desplegable_css.css">
 </head>
 <body>
     <?php

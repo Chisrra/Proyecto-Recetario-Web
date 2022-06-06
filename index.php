@@ -8,7 +8,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Recetario | Inicio</title>
-
+    <link rel="icon" href="IMG/logo.ico">
     <link rel="stylesheet" href="CSS\index_css.css">
 </head>
 <body>

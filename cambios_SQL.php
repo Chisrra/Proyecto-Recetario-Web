@@ -73,6 +73,7 @@
                 if($var==true){
                 
                     //header('Location: index.php');
+                    mysqli_close($conn);
                     echo '<script>
                         setTimeout(function () {
                         window.location.href= "index.php";

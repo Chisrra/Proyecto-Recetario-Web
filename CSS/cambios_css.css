@@ -12,7 +12,7 @@ body{
 
 .container {
     padding: 5vh;
-    height: 170vh;
+    height: 210vh;
     border-radius: 5vh;
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 #formulario{
-    width: 55vh;
+    width: 60vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     background-color: #DCA58F;

@@ -44,6 +44,13 @@
                 $id=$_POST["id"];
                 $var=true;
                 if($_FILES['receta']['name']!=null){
+
+                    $formato=$_FILES['receta']['type'];
+                    if($formato=="image/jpg" or $formato=="image/jpeg" or $formato=="image/png"){
+                        echo "<script>alert('ingrese un tipo de imagen valido (png, jpg o jpeg)')</script>";
+                        die();
+                    }
+
                     $imagentam=$_FILES['receta']['size'];
                     $imagensubida=fopen($_FILES['receta']['tmp_name'],'r');
                     $binarios=fread($imagensubida,$imagentam);

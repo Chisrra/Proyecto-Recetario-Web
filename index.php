@@ -1,9 +1,16 @@
 <?php
+session_start();
+if (!isset($_SESSION['idUsuario'])) {
+    header('Location: login.php');
+    exit;
+} else {
     require_once "conexion.php";
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Recetario | Inicio</title>
@@ -11,6 +18,7 @@
     <link rel="stylesheet" href="CSS\index_css.css">
     <link rel="stylesheet" href="CSS\menu-desplegable_css.css">
 </head>
+
 <body>
     <?php require_once "menu-desplegable.php"; ?>
 
@@ -36,4 +44,5 @@
 
     <script src="JS\index_js.js"></script>
 </body>
+
 </html>

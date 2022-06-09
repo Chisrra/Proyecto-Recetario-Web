@@ -17,10 +17,12 @@
             <a href="#">Crear receta</a>
             <a href="#">Mis recetas</a>
             <a href="#">Explorar más recetas</a>
-            <button type="submit" id="cerrar_s">cerrar</button>
-            <a href="#" id="close">Cerrar sesión</a> <!-- Cambiar a botton submit -->
+            <button type="submit" id="close">Cerrar sesión</button>
+            <!-- <a href="#" id="close">Cerrar sesión</a> -->
         </nav>
         <label for="btn-menu">❌</label>
     </div>
 </div>
+
+<script src="JS\menu-desplegable_js.js"></script>
 <!-- Fin del menu desplegable -->

@@ -40,7 +40,7 @@
     position: relative;
     top: -1vh;
 } /* Enlistado */
-.cont-menu nav a{
+.cont-menu nav a, .cont-menu nav button{
     font-family: 'Nunito', sans-serif;
     font-size: 3vh;
     display: block;
@@ -50,7 +50,7 @@
     border-left: 0.5vh solid transparent;
     transition: all 150ms ease;
 } /* Border lateral tras hover */
-.cont-menu nav a:hover{
+.cont-menu nav a:hover, .cont-menu nav button:hover{
     border-left: 5px solid #c7c7c7;
     background: #1f1f1f;
 }  /* Efecto hover del link */
@@ -89,12 +89,16 @@
     position: relative;
     top: 48vh;
     color: rgb(255, 158, 158);
+
+    /* A botón */
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
 }
 #close:hover{
     border-left: 5px solid #ff2b2b;
     background: #3f1111;
     color: white;
-}
-#cerrar_s {
-    display: none;
 }

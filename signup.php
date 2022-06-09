@@ -37,7 +37,7 @@
                 <label class="form-check-label" for="showC">Mostrar Contraseña</label>
             </div>
             <button type="submit" name="Registro" class="btn btn-success">Registrar</button>
-            <button class="btn btn-secondary" type="button" style="float: right;" onclick="location.href='login.php'">Iniciar sesión</button>
+            <a class="btn btn-light" href="login.php" style="float: right; background-color:#BDE3E3;">Iniciar sesión</a>
         </form>
     </div>
 

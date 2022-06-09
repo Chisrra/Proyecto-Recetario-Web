@@ -17,6 +17,7 @@
             <a href="#">Crear receta</a>
             <a href="#">Mis recetas</a>
             <a href="#">Explorar más recetas</a>
+            <button type="submit" id="cerrar_s">cerrar</button>
             <a href="#" id="close">Cerrar sesión</a> <!-- Cambiar a botton submit -->
         </nav>
         <label for="btn-menu">❌</label>

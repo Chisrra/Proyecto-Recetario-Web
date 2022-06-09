@@ -33,8 +33,8 @@
                 <input type="checkbox" class="form-check-input" id="showC">
                 <label class="form-check-label" for="showC">Mostrar Contraseña</label>
             </div>
-            <button type="submit" name="Log" class="btn btn-primary">Ingresar</button>
-            <button class="btn btn-secondary" type="button" style="float: right;" onclick="location.href='signup.php'">Registrarse :D</button>
+            <button type="submit" name="Log" class="btn btn-dark" style="margin-left:2vw; padding-left:2%; padding-right:2%;">Ingresar</button>
+            <a class="btn btn-light" href="signup.php" style="float: right; background-color:#BDE3E3;">Registrarse :D</a>
         </form>
     </div>
 

@@ -40,6 +40,23 @@
             <button class="btn btn-secondary" type="button" style="float: right;" onclick="location.href='login.php'">Iniciar sesión</button>
         </form>
     </div>
+
+    <!-- jquery  -->
+    <script type="text/javascript">
+        $(document).ready(() => {
+
+            // Mostrar contaseña
+            $('#showC').on('change', () => {
+                if ( $('#showC').is(':checked') ) {
+                    $('#passwordUser').removeAttr('type');
+                } else {
+                    $('#passwordUser').attr('type','password');
+                }
+            });
+            // Fin mostrar contaseña
+        });
+    </script>
+    <!-- Fin jquery -->
 </body>
 
 </html>

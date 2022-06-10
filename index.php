@@ -1,11 +1,11 @@
 <?php
-session_start();
-if (!isset($_SESSION['idUsuario'])) {
-    header('Location: login.php');
-    exit;
-} else {
-    require_once "conexion.php";
-}
+    session_start();
+    if (!isset($_SESSION['idUsuario'])) {
+        header('Location: login.php');
+        exit;
+    } else {
+        require_once "conexion.php";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ if (!isset($_SESSION['idUsuario'])) {
             <div id="perfil">
                 <img src="IMG\default_user.jpg" alt="def.jpg">
             </div>
-            <span id="nom_u">UsuarioRandom</span>
+            <?php require_once "PHP_index\InsertarNomUsuario.php"?>
         </div>
     </div>
     <div id="subtitulo">

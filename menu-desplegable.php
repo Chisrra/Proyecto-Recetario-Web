@@ -1,6 +1,5 @@
 <!-- <link rel="stylesheet" href="CSS\menu-desplegable_css.css"> -->
-<?php 
-?>
+<?php ?>
 
 <!-- Inicio del Menu desplegable -->
 <div class="btn-menu">

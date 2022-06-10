@@ -1,5 +1,6 @@
 <!-- <link rel="stylesheet" href="CSS\menu-desplegable_css.css"> -->
-<?php ?>
+<?php 
+?>
 
 <!-- Inicio del Menu desplegable -->
 <div class="btn-menu">
@@ -18,8 +19,8 @@
             <a href="#">Mis recetas</a>
             <a href="#">Explorar más recetas</a>
             
-            <form action="" method="$_POST">
-                <button type="submit" id="close">Cerrar sesión</button>
+            <form method="post" action='logout.php'>
+                <button type="submit" id="close" name='close'>Cerrar sesión</button>
             </form>
             <!-- <a href="#" id="close">Cerrar sesión</a> -->
         </nav>

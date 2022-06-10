@@ -37,8 +37,8 @@
                 <input type="checkbox" class="form-check-input" id="showC">
                 <label class="form-check-label" for="showC">Mostrar Contraseña</label>
             </div>
-            <button type="submit" name="Registro" class="btn btn-success">Registrar</button>
-            <a class="btn btn-light" href="login.php" style="float: right; background-color:#BDE3E3;">Iniciar sesión</a>
+            <a class="btn btn-light" href="login.php" style="background-color:#BDE3E3;">Iniciar sesión</a>
+            <button type="submit" name="Registro" class="btn btn-success" style="float: right; margin-right:2vw; padding-right:3%; padding-left:3%;">Registrar</button>
         </form>
     </div>
 

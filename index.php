@@ -32,10 +32,7 @@
             <span>Recetado</span>
         </div>
         <div id="user">
-            <div id="perfil">
-                <img src="IMG\default_user.jpg" alt="def.jpg">
-            </div>
-            <?php require_once "PHP_index\InsertarNomUsuario.php"?>
+            <?php require_once "PHP_index\PerfilUsuario.php"?>
         </div>
     </div>
     <div id="subtitulo">

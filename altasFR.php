@@ -7,14 +7,15 @@
         <meta charset="UTF-8">
         <title>conexion con una BD</title>
         <meta name="iewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-        <link rel="stylesheet" href="CSS/AltasCss.css">
-        <link rel="icon" href="IMG/logo.ico">
         <link rel="stylesheet" href="CSS\menu-desplegable_css.css">
+        <link rel="stylesheet" href="CSS/Altas_Css.css">
+        <link rel="icon" href="IMG/logo.ico">
         <script src="JS/jquery.js" type="text/javascript"></script>
     </head>
 <body>
 <div class="formulario">
         <div class="banner">
+            <img src="IMG/comida.jpg" alt="imagen banner" class="ban">
           <div class="info"><h2>Dar de alta receta</h2></div>
         </div>
         <?php
@@ -34,6 +35,7 @@
             <label for="" class="formL">Proceso</label>
             <input name="proceso" type="text" class="formI">
             <br>
+            <br>
             <label for="" class="formL">Foto</label>
             <input name="foto_platillo" type="file" class="formI">
             <br>
@@ -43,7 +45,7 @@
             <label for="" class="formL">Autor(ID)</label>
             <input name="Autor" type="number"  class="formI">
             <br>
-            <input class="bot" type="submit" name="guardar" value="registrar">        
+            <input class="bot" type="submit" value="registrar">      
         </form>
     </div>
 </body>

@@ -1,0 +1,63 @@
+body {
+    background: #581252;
+}
+
+.banner {
+    background-image: url("IMG\comida.jpg");
+    background-color: transparent;
+    width: 75%;
+    height: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10vh;
+}
+
+.info {
+    height: 100px;
+    position: absolute;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: rgba(248, 135, 135, 0.5);
+    text-shadow: 2px 3px rgb(255, 255, 255);
+}
+
+.form {
+    background-color: antiquewhite;
+    width: 75%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.formulario {
+    height: 800px;
+}
+
+.formL {
+    color: white;
+    width: 10px;
+    padding-right: 1%;
+    background-color: rgba(34, 3, 25, 0.904);
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 5%;
+}
+
+.formI {
+    width: 55%;
+    height: 10%;
+    margin-top: 1%;
+    margin-left: 10%;
+    border-radius: 5vh;
+}
+
+.bot {
+    margin-top: 10%;
+    right: 50%;
+}

@@ -6,6 +6,9 @@
                 echo ("<div id='perfil'>
                            <img src='data:{$row["Tipo"]};base64,".base64_encode($row["ImagenPerfil"])."' alt='{$row["NombreImagen"]}'>
                        </div>
+                       <div id='edit'>
+                           <img src='IMG\Edit.png' alt='editar.png'>
+                       </div>
                        <span id='nom_u'>{$row["NombreUsuario"]}</span>");
             }
         }

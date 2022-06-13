@@ -43,7 +43,7 @@ svg {
     width: 5%;
     padding: 3vh 1vh 0 1vh;
 }
-#perfil {
+#perfil{
     width: 5.9vh;
     height: 6vh;
     border-radius: 50%;
@@ -53,9 +53,34 @@ svg {
     overflow: hidden;
     object-fit: fill;
 }
-#perfil img {
+#perfil img{
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
+    cursor: pointer;
+}
+#perfil img:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+#edit {
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    
+    position: relative;
+    top: -4.5vh;
+    left: 1.5vh;
+    transition: 0.5s;
+}
+#perfil img:hover ~ #edit {
+    display: none;
+}
+#edit img {
+    min-width: 100%;
+    min-height: 100%;
 }
 #user span {
     font-size: 2vh;
@@ -64,6 +89,7 @@ svg {
     top: 9.5vh;
     right: 5.5vh;
     width: 25vh;
+    cursor: default;
 }
 
 /* SUBTÍTULO */

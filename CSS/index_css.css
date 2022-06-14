@@ -56,11 +56,11 @@ svg {
 #perfil img{
     min-width: 100%;
     min-height: 100%;
-    cursor: pointer;
+    z-index: 2;
 }
 #perfil img:hover {
     opacity: 0.5;
-    transition: all 0.5s ease;
+    cursor: pointer;
 }
 #edit {
     width: 3vh;
@@ -73,10 +73,7 @@ svg {
     position: relative;
     top: -4.5vh;
     left: 1.5vh;
-    transition: 0.5s;
-}
-#perfil img:hover ~ #edit {
-    display: none;
+    visibility: hidden;
 }
 #edit img {
     min-width: 100%;
@@ -90,6 +87,9 @@ svg {
     right: 5.5vh;
     width: 25vh;
     cursor: default;
+}
+#selec, #enviar {
+    display: none;
 }
 
 /* SUBTÍTULO */

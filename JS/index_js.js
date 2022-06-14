@@ -12,3 +12,21 @@ window.onload = function() {
         user.textContent = comp;
     }
 }
+
+//Efecto hover de la foto de perfil
+var img = document.getElementById("perfil_img");
+var edit = document.getElementById("edit_img");
+img.addEventListener('mouseover', function() {
+    edit.style.visibility = 'visible';
+}, true);
+img.addEventListener('mouseout', function() {
+    edit.style.visibility = 'hidden';
+}, true);
+
+//Seleccion y envio de archivo de foto de perfil
+var selec = document.getElementById("selec");
+var env = document.getElementById("enviar");
+img.addEventListener('click', function() {
+    selec.click();
+    enviar.click();
+})

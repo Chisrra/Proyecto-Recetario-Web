@@ -1,4 +1,6 @@
 <?php
+    require_once "Resultado.php";
+
     $query = "SELECT * FROM `usuario` WHERE idUsuario = {$_SESSION['idUsuario']}";
     if ($result = mysqli_query($conn, $query)) {
         if($result->num_rows > 0) {
@@ -10,11 +12,11 @@
                             <img src='IMG\Edit.png' alt='editar.png' id='edit_img'>
                         </div>
                         <span id='nom_u'>{$row["NombreUsuario"]}</span>
-                        <form action='Resultado.php' method='POST' enctype='multipart/form-data' target='_blank'>
+                        <form action='index.php' method='POST' enctype='multipart/form-data'>
                             <input type='file' name='selec_archivo' id='selec' accept='.jpg,.png,.jpeg'>
-                            <input type='submit' value='' id='enviar'>
+                            <input type='submit' value='' id='enviar' name='actualizar_foto'>
                         </form>
-                        ");
+                     ");
                         
             }
         }

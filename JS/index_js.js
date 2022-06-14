@@ -28,5 +28,7 @@ var selec = document.getElementById("selec");
 var env = document.getElementById("enviar");
 img.addEventListener('click', function() {
     selec.click();
-    enviar.click();
-})
+});
+selec.onchange = function(e) {
+    env.click();
+}

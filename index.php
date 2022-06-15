@@ -38,6 +38,17 @@
     <div id="subtitulo">
         ¡ Compartiendo tradiciones en nuestros paladares !
     </div>
+    <div id="contenido">
+        <span class="subt_cont tr">Tus recetas</span>
+        <div id="mis_recetas" class="sub_cont">
+            <?php require_once "PHP_index\AñadirMisRecetas.php"?>
+        </div>
+
+        <span class="subt_cont">Explora nuevas recetas</span>
+        <div id="mas_recetas" class="sub_cont">
+
+        </div>
+    </div>
 
     <script src="JS\index_js.js"></script>
 </body>

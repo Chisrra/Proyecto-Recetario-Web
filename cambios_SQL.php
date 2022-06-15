@@ -28,8 +28,6 @@
                         $fechaC=$reg['Fecha_Creacion'];
                         $fechaUE=$reg['Fecha_UltimaEdicion'];
                         $Usuario_FK=$reg['Usuario_idUsuario'];
-                        
-                        
                     }
                 }
             }

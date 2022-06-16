@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-    <meta charset="UTF-8">
         <title>conexion con una BD</title>
-        <meta name="iewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="CSS/AltasCss.css">
         <link rel="icon" href="IMG/logo.ico">
         <link rel="stylesheet" href="CSS\menu-desplegable_css.css">
@@ -38,8 +39,8 @@ if($valido){
     $ingredientes=$_POST["ingredientes"];
     $proceso=$_POST["proceso"];
     $foto=addslashes(file_get_contents($_FILES['foto_platillo']['tmp_name']));
-    $FechaC=$_POST["fechaC"];
-    
+    date_default_timezone_set('America/Mexico_City');
+    $FechaC=date("Y-m-d H:i:s");
     $usuario=$_SESSION['idUsuario'];
 
         if(isset($_FILES['foto_platilo']['name'])){

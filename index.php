@@ -40,12 +40,12 @@
     </div>
     <div id="contenido">
         <span class="subt_cont tr">Tus recetas</span>
-        <div id="mis_recetas" class="sub_cont">
+        <div class="sub_cont">
             <?php require_once "PHP_index\AñadirMisRecetas.php"?>
         </div>
 
-        <span class="subt_cont">Explora nuevas recetas</span>
-        <div id="mas_recetas" class="sub_cont">
+        <span class="subt_cont mr">¡ Explora nuevas recetas !</span>
+        <div class="sub_cont">
 
         </div>
     </div>

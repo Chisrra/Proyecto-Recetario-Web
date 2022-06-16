@@ -32,3 +32,13 @@ img.addEventListener('click', function() {
 selec.onchange = function(e) {
     env.click();
 }
+
+//Cambio de color de texto de usuario tras dar botón menú y salir
+const ham_btn = document.querySelector('#ham_btn');
+const close_btn = document.querySelector('#close_btn');
+ham_btn.onclick = () => {
+    user.style.color = 'white';
+}
+close_btn.onclick = () => {
+    user.style.color = 'black';
+}

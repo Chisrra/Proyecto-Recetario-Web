@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>conexion con una BD</title>
+        <title>Recetario | Crear receta</title>
         <meta name="iewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="CSS\menu-desplegable_css.css">
         <link rel="stylesheet" href="CSS/AltaCss.css">

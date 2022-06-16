@@ -123,6 +123,10 @@ svg {
     justify-content: center;
     align-items: center;
 }
+.sub_cont a {
+    text-decoration: none;
+    color: black;
+}
 .tr {
     background-color: rgb(255, 192, 56);
 }
@@ -180,7 +184,6 @@ svg {
 .imagen_r img {
     min-width: 100%;
     min-height: 100%;
-    cursor: pointer;
 }
 .texto {
     display: flex;
@@ -189,7 +192,6 @@ svg {
     width: 70%;
     padding-left: 1vh;
     word-wrap: break-word;
-    cursor: pointer;
     overflow: hidden;
 }
 .titulo {

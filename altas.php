@@ -1,6 +1,7 @@
 <?php
      require_once "conexion.php";
      require_once "menu-desplegable.php";
+     session_start();
 ?>
 <html>
     <head>
@@ -21,6 +22,7 @@
         <?php
             date_default_timezone_set('America/Mexico_City');
             $fecha_actual=date("Y-m-d H:i:s");
+            $usuario=$_SESSION['idUsuario'];
         ?>
         <form action="altasP.php" method="post" enctype="multipart/form-data" class="form">
             <label for="nombre_receta" class="formL">Nombre</label>  
@@ -33,7 +35,7 @@
             <input name="ingredientes" type="text" class="formI">
             <br>
             <label for="proceso" class="formL">Proceso</label>
-            <input name="proceso" type="text" class="formI">
+            <textarea name="proceso"  class="formI" rows="3"></textarea>
             <br>
             <br>
             <label for="foto_platillo" class="formL">Foto</label>
@@ -43,7 +45,7 @@
             <input name="fechaC" type="datetime" value="<?= $fecha_actual?>" class="formI">
             <br>
             <label for="Autor" class="formL">Autor(ID)</label>
-            <input name="Autor" type="number"  class="formI">
+            <input name="Autor" type="text" value="<?=$usuario?>" class="formI">
             <br>
             <input class="bot" type="submit" value="registrar">      
         </form>

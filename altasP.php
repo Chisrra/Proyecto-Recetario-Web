@@ -12,7 +12,7 @@
 </html>
 <?php
     require_once "conexion.php";
-    
+    session_start();
         //---Validar
         $valido = true;
         function buscarRegistro($conn, $query, $dato, $campo)
@@ -21,7 +21,7 @@
             if (mysqli_query($conn, $query)) {
                 if (mysqli_affected_rows($conn) != 0) {
                     echo "<script>alert('El platillo ya existe en la BD');
-                    window.location='/programas/conexion a BD/proyecto/Proyecto-Recetario-Web/altasFR.php' </script>";
+                    window.location='../Proyecto-Recetario-Web/altas.php' </script>";
                     $valido = false;
                 }
             } else {
@@ -39,7 +39,8 @@ if($valido){
     $proceso=$_POST["proceso"];
     $foto=addslashes(file_get_contents($_FILES['foto_platillo']['tmp_name']));
     $FechaC=$_POST["fechaC"];
-    $usuario=$_POST["Autor"];
+    
+    $usuario=$_SESSION['idUsuario'];
 
         if(isset($_FILES['foto_platilo']['name'])){
             $tipoArchivo=$_FILES['foto_platillo']['type'];
@@ -53,7 +54,7 @@ if($valido){
     $resultado=mysqli_query($conn,$inserta);
     if($resultado){
         echo "<script>alert('se ha registrado correctamente al usuario');
-        window.location='/programas/conexion a BD/proyecto/Proyecto-Recetario-Web' </script>";
+        window.location='../Proyecto-Recetario-Web/altas.php' </script>";
     }else{
         echo "<script>alert('no se pudo registrar'); window.history.go(-1);</script>";
     }

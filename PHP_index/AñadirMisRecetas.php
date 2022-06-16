@@ -29,7 +29,7 @@
             }
         }
         else {
-            echo ('<p id="empty">No tienes recetas, <a href="altas.php">¡ crea una !</a></p>');
+            echo ('<p class="empty">No tienes recetas, <a href="altas.php">¡ crea una !</a></p>');
         }
     }
 ?>

@@ -134,12 +134,16 @@ svg {
 .sub_cont {
     width: 80%;
 }
-#empty {
+.empty {
     color: white;
     text-align: center;
 }
-#empty a {
+.empty a {
     text-decoration: none;
+}
+.ems {
+    margin-bottom: 5vh;
+    text-shadow: 1px 1px black;
 }
 .receta {
     height: 20vh;

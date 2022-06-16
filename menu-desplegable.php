@@ -10,7 +10,7 @@
 <div class="container-menu">
     <div class="cont-menu">
         <nav>
-            <a href="index.php" id="logo" title="Inicio">
+            <a href="../Proyecto-Recetario-Web/" id="logo" title="Inicio">
                 <img src="IMG\logo.png" alt="logo.png">
                 <span>Recetado</span>
             </a>

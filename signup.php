@@ -22,7 +22,7 @@
         <form method="post">
             <div class="mb-3">
                 <label for="nuevoUsuario" class="form-label">Nombre de Usuario</label>
-                <input type="text" class="form-control" id="nuevoUsuario" name="nuevoUsuario" placeholder="Nuevo Usuario :D" onfocusout="hola()" required>
+                <input type="text" class="form-control" id="nuevoUsuario" name="nuevoUsuario" placeholder="Nuevo Usuario :D" autofocus required>
             </div>
             <div class="mb-3">
                 <label for="nuevoCorreo" class="form-label">Ingrese su correo</label>

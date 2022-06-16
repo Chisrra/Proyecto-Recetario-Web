@@ -22,7 +22,7 @@
         <form method="post">
             <div class="mb-3">
                 <label for="logCorreo" class="form-label">Ingrese su correo</label>
-                <input type="email" class="form-control" id="logCorreo" name="logCorreo" placeholder="usuarioRecetario@company.type" required>
+                <input type="email" class="form-control" id="logCorreo" name="logCorreo" placeholder="usuarioRecetario@company.type" autofocus required>
             </div>
             <div class="mb-3">
                 <label for="passwordUser" class="form-label">Contraseña</label>

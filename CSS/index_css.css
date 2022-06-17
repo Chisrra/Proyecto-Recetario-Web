@@ -123,6 +123,10 @@ svg {
     justify-content: center;
     align-items: center;
 }
+.sub_cont a {
+    text-decoration: none;
+    color: black;
+}
 .tr {
     background-color: rgb(255, 192, 56);
 }
@@ -134,12 +138,16 @@ svg {
 .sub_cont {
     width: 80%;
 }
-#empty {
+.empty {
     color: white;
     text-align: center;
 }
-#empty a {
+.empty a {
     text-decoration: none;
+}
+.ems {
+    margin-bottom: 5vh;
+    text-shadow: 1px 1px black;
 }
 .receta {
     height: 20vh;
@@ -176,7 +184,6 @@ svg {
 .imagen_r img {
     min-width: 100%;
     min-height: 100%;
-    cursor: pointer;
 }
 .texto {
     display: flex;
@@ -185,7 +192,6 @@ svg {
     width: 70%;
     padding-left: 1vh;
     word-wrap: break-word;
-    cursor: pointer;
     overflow: hidden;
 }
 .titulo {

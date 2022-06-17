@@ -22,3 +22,24 @@ h1{
 p{
     font-family: 'Arvo', serif;
 }
+.contenido{
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1%;
+}
+#contenedorImg{
+    width: 20vw;
+    height: 30vh;
+    object-fit: fill; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+#contenedor>img{
+    min-width: 100%;
+    min-height: 100%;
+}

@@ -50,20 +50,32 @@ if ($rs = mysqli_query($conn, $query)); {
     </nav>
     <!-- fin barra -->
     <div class="container2">
-            <div class="row align-items-start">
-                    <div class="col">
-                        <h1><?php echo "{$fila['Nombre_Receta']}"; ?></h1>
-                        <p id="desc"><?php echo "{$fila['Descripcion_Breve']}"; ?></p>
-                    </div>
-                    <div class="col">
-                        <img <?php echo 'src="data:;base64,' . base64_encode($fila["Foto_Platillo"]) . '" alt="receta' . $fila["Nombre_Receta"] . '.jpg" '?> width="50%" >
-                    </div>
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="contenido">
+                    <h1><?php echo "{$fila['Nombre_Receta']}"; ?></h1>
+                    <p id="desc"><?php echo "{$fila['Descripcion_Breve']}"; ?></p>
+                </div>
             </div>
-            <div class="row align-items-start">
-                <div class="col">
+            <div class="col">
+                <div id="contenedorImg">
+                    <img <?php echo 'src="data:;base64,' . base64_encode($fila["Foto_Platillo"]) . '" alt="receta' . $fila["Nombre_Receta"] . '.jpg" ' ?> >
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start" style="margin-top:3vh;">
+            <div class="col">
+                <div class="contenido">
                     <h2>Ingredientes</h2>
                     <p><?php echo "{$fila['Ingredientes']}" ?></p>
                 </div>
             </div>
+            <div class="col">
+                <div class="contenido">
+                    <h2>Preparación</h2>
+                    <p><?php echo "{$fila['Proceso']}"; ?></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>

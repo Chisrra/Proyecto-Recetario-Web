@@ -6,25 +6,31 @@
         $row = mysqli_num_rows($result);
         if ($row) {
             while($fil = $result->fetch_assoc()) {
-                if (++$fila == $row) echo ('<div class="receta last">');
+                $other_quer = "SELECT NombreUsuario FROM usuario WHERE idUsuario = {$fil["Usuario_idUsuario"]}";
+                $other_r = mysqli_query($conn, $other_quer);
+                $other = mysqli_fetch_array($other_r);
+
+                if (++$fila == $row) echo ("<div class='receta last l_all'>");
                 else {
-                    if ($fila == 1) echo('<div class="receta first sup">');
-                    else echo('<div class="receta sup">');
+                    if ($fila == 1) echo ('<div class="receta first sup">');
+                    else echo ('<div class="receta sup">');
                 }
 
-                if ($fila == 1) echo('<div class="imagen_r first_i">');
-                else if ($fila == $row) echo('<div class="imagen_r last_i">');
-                else echo('<div class="imagen_r">');
-                echo ('         <img src="data:;base64,'.base64_encode($fil["Foto_Platillo"]).'" alt="receta'.$row.'.jpg">
-                            </div>
-                            <div class="texto">
-                                <span class="titulo">'.$fil["Nombre_Receta"].'</span>
-                                <span class="descripcion">'.$fil["Descripcion_Breve"].'</span>
-                            </div>
-                            <div class="btns">
+                if ($fila == 1) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i">');
+                else if ($fila == $row) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r last_i">');
+                else echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r">');
+                echo ('             <img src="data:;base64,' . base64_encode($fil["Foto_Platillo"]) . '" alt="receta' . $row . '.jpg">
+                                </a>
                                 
-                            </div>
-                        </div>');
+                                <a href="receta.php?id='.$fil["id"].'" class="texto">
+                                    <span class="titulo">' . $fil["Nombre_Receta"] . '</span>
+                                    <span class="descripcion">' . $fil["Descripcion_Breve"] . '</span>
+                                </a>
+
+                                <div class="btns">
+                                    <span class="autor"><b>Autor:</b> '.$other["NombreUsuario"].'</span>
+                                </div>
+                            </div>');
             }
         }
         else {

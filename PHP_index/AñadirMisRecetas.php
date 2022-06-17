@@ -30,10 +30,10 @@
                                 </a>
                                 <div class="btns">
                                     <form action="cambios.php" method="POST">
-                                        <button type="submit" name="modif_r" value="'.$fil["id"].'" class="btn modif" title="Modificar receta"></button>
+                                        <button type="submit" name="modif_r" value="'.$fil["id"].'" class="butn modif" title="Modificar receta"></button>
                                     </form>
                                     
-                                    <button type="submit" value="'.$fil["id"].'" class="btn elim" title="Eliminar receta"></button>
+                                    <button type="submit" value="'.$fil["id"].'" class="butn elim" title="Eliminar receta"></button>
                                 </div>
                             </div>');
             }

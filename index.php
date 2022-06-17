@@ -50,6 +50,10 @@
         </div>
     </div>
 
+    <div id="delete">
+        
+    </div>
+
     <script src="JS\index_js.js"></script>
 </body>
 

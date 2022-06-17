@@ -58,6 +58,7 @@ p{
 
 #botonbusc{
     margin-bottom: 3vh;
+    display: none;
 }
 
 .linea{

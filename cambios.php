@@ -1,7 +1,6 @@
 <?php
     require_once "conexion.php";
     require_once "cambios_SQL.php";
-    
 ?> 
 
 <!DOCTYPE html>
@@ -32,7 +31,7 @@
         <form method="POST" action="cambios.php" enctype="multipart/form-data" >
         <div class="mb-3">
             <label for="id" class="form-label"><p id="labform"  >Id de la receta</p></label>
-            <input type="text" class="form-control" id="id_input" name="id" <?php if(isset($id)) { ?> value="<?php echo $id; ?>" <?php } ?>>
+            <input type="text" class="form-control" id="id_input" name="id" <?php if(isset($id)) { ?> value="<?php echo $id; ?>" <?php } ?> readonly>
         </div>
 
         <div class="mb-3">
@@ -85,7 +84,17 @@
         </form>
     </div>
 
-
+    <?php 
+        if(isset($_POST["modif_r"])) {
+            $id = $_POST["modif_r"];
+            echo (' <script>
+                        const inp = document.getElementById("id_input");
+                        const btn = document.getElementById("botonbusc");
+                        inp.value = '.$id.';
+                        btn.click();
+                    </script>');
+        }
+    ?>
 </body>
 
 </html>

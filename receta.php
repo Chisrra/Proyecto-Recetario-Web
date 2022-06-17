@@ -49,9 +49,11 @@ if ($rs = mysqli_query($conn, $query)); {
         </div>
     </nav>
     <!-- fin barra -->
+
+    <!-- contenido -->
     <div class="container2">
         <div class="row align-items-start">
-            <div class="col">
+            <div class="col align-self-center">
                 <div class="contenido">
                     <h1><?php echo "{$fila['Nombre_Receta']}"; ?></h1>
                     <p id="desc"><?php echo "{$fila['Descripcion_Breve']}"; ?></p>
@@ -63,7 +65,7 @@ if ($rs = mysqli_query($conn, $query)); {
                 </div>
             </div>
         </div>
-        <div class="row align-items-start" style="margin-top:3vh;">
+        <div class="row align-items-start">
             <div class="col">
                 <div class="contenido">
                     <h2>Ingredientes</h2>
@@ -78,4 +80,9 @@ if ($rs = mysqli_query($conn, $query)); {
             </div>
         </div>
     </div>
+    <!-- fin contenido -->
+
+    <!-- Footer -->
+        <?php include_once 'pie_de_Pagina.php'?>
+    <!-- fin footer -->
 </body>

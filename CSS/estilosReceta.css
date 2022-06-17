@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Nunito+Sans:ital,wght@1,700&family=Shadows+Into+Light&display=swap');
+
 body {
-    /* height: 100vh; */
-  background: linear-gradient(to right, #f0c27b, #4b1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+    background: linear-gradient(to right, #f0c27b, #4b1248);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
@@ -11,35 +13,44 @@ a {
     border-left: 0.5vh solid transparent;
     color: #c7c7c7 !important;
 }
-.container2{
+
+.container2 {
     margin-left: 20vh;
-    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
-h1{
+
+h1 {
     font-family: 'Shadows Into Light', cursive;
     font-size: 500%;
 }
-p{
+
+p {
     font-family: 'Arvo', serif;
 }
-.contenido{
+
+.contenido {
     background-color: white;
     border-radius: 10px;
     width: 95%;
     padding-left: 1.5%;
     padding-right: 1.5%;
     padding-bottom: 1%;
+    margin-top: 3vh;
 }
-#contenedorImg{
-    width: 20vw;
-    height: 30vh;
-    object-fit: fill; 
+
+#contenedorImg {
+    width: 50vh;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     border-radius: 12px;
 }
-#contenedor>img{
+
+#contenedorImg img {
     min-width: 100%;
     min-height: 100%;
 }

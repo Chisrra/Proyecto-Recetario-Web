@@ -42,12 +42,19 @@
                 $id=$_POST["id"];
                 $var=true;
                 if($_FILES['receta']['name']!=null){
-
+                    //proceso de subida de imagen
+                    
                     $imagentam=$_FILES['receta']['size'];
                     $imagensubida=fopen($_FILES['receta']['tmp_name'],'r');
                     $binarios=fread($imagensubida,$imagentam);
                     $binarios=mysqli_escape_string($conn,$binarios);
+                    /*$ruta = $_FILES['receta']['tmp_name'];
+                    $contBin = addslashes(file_get_contents($ruta));
+                    $imagenBase64 = base64_encode($contBin);*/
+
                     $query="UPDATE receta SET Foto_Platillo='$binarios' WHERE id='$id'";
+                    //$query="UPDATE receta SET Foto_Platillo='$imagenBase64' WHERE id='$id'";
+                    
                     $result = mysqli_query($conn,$query);
              
                 }

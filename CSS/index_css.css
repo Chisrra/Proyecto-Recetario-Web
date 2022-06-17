@@ -217,7 +217,7 @@ svg {
     gap: 1vh;
     margin-bottom: 1vh;
 }
-.btn {
+.butn {
     border-radius: 50%;
     border: none;
     height: 4vh;
@@ -229,4 +229,12 @@ svg {
 }
 .elim {
     background-color: red;
+}
+
+/* FRAME - ELIMINAR RECETA */
+#delete {
+    width: 100vh;
+    height: 150vh;
+    background-color: red;
+    position: fixed;
 }

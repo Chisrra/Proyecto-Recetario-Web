@@ -52,6 +52,10 @@ if (!isset($_SESSION['idUsuario'])) {
         </div>
     </div>
 
+    <div id="delete">
+        
+    </div>
+
     <script src="JS\index_js.js"></script>
     <?php include_once 'pie_de_Pagina.php' ?>
 </body>

@@ -1,5 +1,11 @@
 <?php
-     require_once "conexion.php";
+    session_start();
+    if (!isset($_SESSION['idUsuario'])) {
+        header('Location: login.php');
+        exit;
+    } else {
+        require_once "conexion.php";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="es">

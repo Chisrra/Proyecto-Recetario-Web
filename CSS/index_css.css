@@ -28,7 +28,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5%;
+    padding-right: 5%;
 }
 #title img {
     width: 15vh;
@@ -44,6 +44,7 @@ svg {
     width: 5%;
     padding: 3vh 1vh 0 1vh;
     position: fixed;
+    padding-right: 5.5%;
 }
 #perfil{
     width: 5.9vh;
@@ -113,6 +114,7 @@ svg {
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20vh;
 }
 .subt_cont {
     width: 100%;
@@ -124,9 +126,6 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.fin {
-    margin-bottom: 3vh;
 }
 .sub_cont a {
     text-decoration: none;
@@ -232,9 +231,13 @@ svg {
 }
 
 /* FRAME - ELIMINAR RECETA */
-#delete {
-    width: 100vh;
-    height: 150vh;
-    background-color: red;
+.eliminar_r {
+    padding: 2vh 0 0 3vh;
     position: fixed;
+}
+.eliminar_r iframe {
+    width: 500px;
+    height: 1000px;
+    background-color: red;
+    position: relative;
 }

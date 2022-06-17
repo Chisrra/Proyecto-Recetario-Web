@@ -47,13 +47,13 @@ if (!isset($_SESSION['idUsuario'])) {
         </div>
 
         <span class="subt_cont mr">¡ Explora nuevas recetas !</span>
-        <div class="sub_cont fin">
+        <div class="sub_cont">
             <?php require_once "PHP_index\AñadirMasRecetas.php" ?>
         </div>
     </div>
 
-    <div id="delete">
-        
+    <div class="eliminar_r">
+        <iframe></iframe>
     </div>
 
     <script src="JS\index_js.js"></script>

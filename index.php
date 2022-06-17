@@ -1,11 +1,11 @@
 <?php
-    session_start();
-    if (!isset($_SESSION['idUsuario'])) {
-        header('Location: login.php');
-        exit;
-    } else {
-        require_once "conexion.php";
-    }
+session_start();
+if (!isset($_SESSION['idUsuario'])) {
+    header('Location: login.php');
+    exit;
+} else {
+    require_once "conexion.php";
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +17,8 @@
     <link rel="icon" href="IMG/logo.ico">
     <link rel="stylesheet" href="CSS\index_css.css">
     <link rel="stylesheet" href="CSS\menu-desplegable_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
             <span>Recetado</span>
         </div>
         <div id="user">
-            <?php require_once "PHP_index\PerfilUsuario.php"?>
+            <?php require_once "PHP_index\PerfilUsuario.php" ?>
         </div>
     </div>
     <div id="subtitulo">
@@ -41,16 +43,17 @@
     <div id="contenido">
         <span class="subt_cont tr">Tus recetas</span>
         <div class="sub_cont">
-            <?php require_once "PHP_index\AñadirMisRecetas.php"?>
+            <?php require_once "PHP_index\AñadirMisRecetas.php" ?>
         </div>
 
         <span class="subt_cont mr">¡ Explora nuevas recetas !</span>
         <div class="sub_cont fin">
-            <?php require_once "PHP_index\AñadirMasRecetas.php"?>
+            <?php require_once "PHP_index\AñadirMasRecetas.php" ?>
         </div>
     </div>
 
     <script src="JS\index_js.js"></script>
+    <?php include_once 'pie_de_Pagina.php' ?>
 </body>
 
 </html>

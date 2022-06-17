@@ -1,3 +1,5 @@
+<?php ?>
+
 <footer class="bg-dark text-center text-white">
   <!-- 1erDiv -->
   <div class="container p-4">

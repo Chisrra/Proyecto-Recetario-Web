@@ -19,14 +19,16 @@
         <link rel="icon" href="IMG/logo.ico">
         <script src="JS/jquery.js" type="text/javascript"></script>
     </head>
-<body>
+<body style="background-image:url('IMG/FondoA.jpg') ">
     <?php require_once "menu-desplegable.php";?>
     <br>
-<div class="formu" >
+    <div class="fond"></div>
+    <div class="formu" >
         <div class="banner" style="z-index: -1;" >
             <img src="IMG/comida.jpg" alt="imagen banner" class="ban" style="z-index: index -1;">
           <div class="info" style="z-index: index -2;"><h2>Dar de alta receta</h2></div>
         </div>
+     
         <form action="altasP.php" method="post" enctype="multipart/form-data" class="form">
             <label for="nombre" class="formL">Nombre</label>  
             <input name="nombre_receta" type="text" class="formI" id="nombre">
@@ -49,6 +51,7 @@
             <input class="bot" type="submit" value="Registrar">      
         </form>
     </div>
+</div>
 </body>
 
 </html>

@@ -1,91 +1,98 @@
-    body {
-        background: #581252;
-    }
-    
-    .banner {
-        width: 75%;
-        height: 20%;
-        margin-left: 13%;
-        margin-bottom: -200%;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        z-index: -2;
-    }
-    
-    .ban {
-        position: absolute;
-        width: 90%;
-        height: 90%;
-        object-fit: cover;
-        margin-top: 0%;
-        border-radius: 10vh;
-        z-index: -2;
-    }
-    
-    .info {
-        height: 80px;
-        position: relative;
-        font-size: 50px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin-top: 0%;
-        background: rgba(248, 135, 135, 0.5);
-        text-shadow: 2px 3px rgb(255, 255, 255);
-        z-index: -2;
-    }
-    
-    .form {
-        background-color: antiquewhite;
-        width: 80vw;
-        height: 90vh;
-        margin-left: 10%;
-        margin-top: 15%;
-        padding-top: 1%;
-        border-style: groove;
-        border-width: 2vw;
-        border-color: rgb(255, 134, 239);
-        position: absolute;
-        z-index: -1;
-    }
-    
-    .formu {
-        margin-top: 2%;
-        height: 100%;
-    }
-    
-    .formL {
-        color: white;
-        width: 7vw;
-        padding: 1%;
-        background-color: rgba(122, 49, 102, 0.904);
-        margin-left: 5%;
-        margin-right: 5%;
-        height: 10%;
-        border-radius: 5vw;
-    }
-    
-    .formI {
-        width: 55vw;
-        height: 4vw;
-        margin-top: 3%;
-        margin-left: 3%;
-        border-radius: 5vh;
-        cursor: text;
-    }
-    
-    .bot {
-        margin-top: 0%;
-        margin-left: 50%;
-        width: 11vw;
-        height: 5vw;
-        color: white;
-        text-shadow: 2px 2px black;
-        font-weight: 800;
-        font-size: 20px;
-        background-color: rgb(156, 143, 143);
-        border-radius: 5vw;
-        border-color: red;
-    }
+        .banner {
+            width: 75%;
+            height: 20%;
+            margin-left: 13%;
+            margin-bottom: -200%;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            z-index: -2;
+        }
+        
+        .ban {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            margin-top: 0%;
+            border-radius: 10vh;
+            z-index: -2;
+        }
+        
+        .info {
+            height: 80px;
+            position: absolute;
+            font-size: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 0%;
+            background: rgba(248, 135, 135, 0.5);
+            text-shadow: 2px 3px rgb(255, 255, 255);
+            z-index: -2;
+        }
+        
+        .form {
+            background-color: antiquewhite;
+            width: 80vw;
+            height: 90vh;
+            margin-left: 3%;
+            margin-top: 15%;
+            padding-top: 1%;
+            border-style: groove;
+            border-width: 2vw;
+            border-color: rgb(255, 134, 239);
+            position: absolute;
+            z-index: -1;
+            left: 10%;
+        }
+        
+        .formu {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .formL {
+            color: white;
+            width: 7vw;
+            padding: 1%;
+            background-color: rgba(122, 49, 102, 0.904);
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 10%;
+            border-radius: 5vw;
+        }
+        
+        .formI {
+            width: 55vw;
+            height: 4vw;
+            margin-top: 3%;
+            margin-left: 3%;
+            border-radius: 5vh;
+            cursor: text;
+        }
+        
+        .bot {
+            margin-top: 0%;
+            margin-left: 50%;
+            width: 11vw;
+            height: 5vw;
+            color: white;
+            text-shadow: 2px 2px black;
+            font-weight: 800;
+            font-size: 20px;
+            background-color: rgb(48, 38, 38);
+            border-radius: 5vw;
+            border-color: rgb(255, 0, 0);
+        }
+        
+        .fond {
+            width: 90vw;
+            height: 150vh;
+            left: 7.5%;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+            float: left;
+        }

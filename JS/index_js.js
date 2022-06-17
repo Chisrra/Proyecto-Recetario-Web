@@ -1,12 +1,13 @@
+/*
 // -> WINDOW.ONLOAD <-
 //Reducir nombre de usuario cuando rebase cierto número de caracteres
 var user = document.getElementById("nom_u");
 var creadores = document.querySelectorAll(".autor");
 
 window.onload = function() {
-    if (user.textContent.length > 15) {
+    if (user.textContent.length > 13) {
         let comp = "";
-        for (let i=0; i<15; i++) {
+        for (let i=0; i<13; i++) {
             comp += user.textContent.charAt(i);
         }
         comp += "...";
@@ -21,19 +22,16 @@ window.onload = function() {
         c += "...";
         creador.textContent = c;
     });
-}
+} */
 
-//Reducir nombre de usuario cuando rebase cierto número de caracteres
-
+//Tres puntos en descripción breve al llegar al límite
+var desc = document.querySelectorAll(".descripcion");
 window.onload = function() {
-    if (user.textContent.length > 15) {
-        let comp = "";
-        for (let i=0; i<15; i++) {
-            comp += user.textContent.charAt(i);
+    desc.forEach(element => {
+        if (element.textContent.length >= 89) {
+            element.textContent += "...";
         }
-        comp += "...";
-        user.textContent = comp;
-    }
+    });
 }
 
 //Efecto hover de la foto de perfil

@@ -8,6 +8,7 @@
             while ($fil = $result->fetch_assoc()) {
                 if ($row == 1) {
                     echo ("<div class='receta first last'>");
+                    echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i last_i">');
                 }
                 else {
                     if (++$fila == $row) echo ("<div class='receta last'>");
@@ -15,11 +16,11 @@
                         if ($fila == 1) echo ('<div class="receta first sup">');
                         else echo ('<div class="receta sup">');
                     }
-                }
 
-                if ($fila == 1) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i">');
-                else if ($fila == $row) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r last_i">');
-                else echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r">');
+                    if ($fila == 1) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i">');
+                    else if ($fila == $row) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r last_i">');
+                    else echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r">');
+                }
                 echo ('             <img src="data:;base64,' . base64_encode($fil["Foto_Platillo"]) . '" alt="receta' . $row . '.jpg">
                                 </a>
                                 
@@ -28,8 +29,11 @@
                                     <span class="descripcion">' . $fil["Descripcion_Breve"] . '</span>
                                 </a>
                                 <div class="btns">
-                                    <button type="submit" class="btn modif" title="Modificar receta">' . $fil["id"] . '</button>
-                                    <button type="submit" class="btn elim" title="Eliminar receta">' . $fil["id"] . '</button>
+                                    <form action="cambios.php" method="POST">
+                                        <button type="submit" name="modif_r" value="'.$fil["id"].'" class="btn modif" title="Modificar receta"></button>
+                                    </form>
+                                    
+                                    <button type="submit" value="'.$fil["id"].'" class="btn elim" title="Eliminar receta"></button>
                                 </div>
                             </div>');
             }

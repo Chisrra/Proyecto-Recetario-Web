@@ -10,15 +10,21 @@
                 $other_r = mysqli_query($conn, $other_quer);
                 $other = mysqli_fetch_array($other_r);
 
-                if (++$fila == $row) echo ("<div class='receta last l_all'>");
-                else {
-                    if ($fila == 1) echo ('<div class="receta first sup">');
-                    else echo ('<div class="receta sup">');
+                if ($row == 1) {
+                    echo ("<div class='receta first last'>");
+                    echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i last_i">');
                 }
+                else {
+                    if (++$fila == $row) echo ("<div class='receta last'>");
+                    else {
+                        if ($fila == 1) echo ('<div class="receta first sup">');
+                        else echo ('<div class="receta sup">');
+                    }
 
-                if ($fila == 1) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i">');
-                else if ($fila == $row) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r last_i">');
-                else echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r">');
+                    if ($fila == 1) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r first_i">');
+                    else if ($fila == $row) echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r last_i">');
+                    else echo ('<a href="receta.php?id='.$fil["id"].'" class="imagen_r">');
+                }
                 echo ('             <img src="data:;base64,' . base64_encode($fil["Foto_Platillo"]) . '" alt="receta' . $row . '.jpg">
                                 </a>
                                 

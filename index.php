@@ -45,7 +45,7 @@
         </div>
 
         <span class="subt_cont mr">¡ Explora nuevas recetas !</span>
-        <div class="sub_cont">
+        <div class="sub_cont fin">
             <?php require_once "PHP_index\AñadirMasRecetas.php"?>
         </div>
     </div>

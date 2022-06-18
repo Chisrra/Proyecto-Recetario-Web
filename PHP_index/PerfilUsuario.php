@@ -1,5 +1,5 @@
 <?php
-    require_once "PHP_index\Resultado.php";
+    require_once "Resultado.php";
 
     $query = "SELECT * FROM `usuario` WHERE idUsuario = {$_SESSION['idUsuario']}";
     if ($result = mysqli_query($conn, $query)) {

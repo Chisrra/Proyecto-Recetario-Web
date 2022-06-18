@@ -45,22 +45,6 @@ if (!isset($_SESSION['idUsuario'])) {
         <div class="sub_cont">
             <?php require_once "PHP_index\AñadirMisRecetas.php" ?>
         </div>
-
-        <span class="subt_cont mr">¡ Explora nuevas recetas !</span>
-        <div class="sub_cont">
-            <?php require_once "PHP_index\AñadirMasRecetas.php" ?>
-        </div>
-        <div id="eliminar_r" class="e_invisible">
-            <div id="e_con">
-                <p id="e_txt">¿Está seguro de eliminar la receta </p>
-                <div id="e_btns">
-                    <form action="EliminarReceta.php" method="POST">
-                        <button type="submit" name="id_er" class="e_btn" id="delete">Sí, borrar</button>
-                    </form>
-                    <button type="submit" class="e_btn" id="cancel">Cancelar</button>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="JS\index_js.js"></script>

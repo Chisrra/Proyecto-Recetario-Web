@@ -33,7 +33,8 @@
                                         <button type="submit" name="modif_r" value="'.$fil["id"].'" class="butn modif" title="Modificar receta"></button>
                                     </form>
                                     
-                                    <button type="submit" value="'.$fil["id"].'" class="butn elim" title="Eliminar receta"></button>
+                                    <button type="submit" value="'.$fil["Nombre_Receta"].'" class="butn elim" title="Eliminar receta"></button>
+                                    <button type="submit" value="'.$fil["id"].'" class="hiden_value"></button>
                                 </div>
                             </div>');
             }

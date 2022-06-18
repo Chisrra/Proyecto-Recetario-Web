@@ -15,8 +15,8 @@
                 <span>Recetado</span>
             </a>
             <a href="altas.php">Crear receta</a>
-            <a href="#">Mis recetas</a>
-            <a href="#">Explorar más recetas</a>
+            <a href="Mis_recetas.php">Mis recetas</a>
+            <a href="Explorar_recetas.php">Explorar más recetas</a>
             
             <form method="post" action='logout.php'>
                 <button type="submit" id="close" name='close'>Cerrar sesión</button>

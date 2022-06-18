@@ -41,11 +41,6 @@ if (!isset($_SESSION['idUsuario'])) {
         ¡ Compartiendo tradiciones en nuestros paladares !
     </div>
     <div id="contenido">
-        <span class="subt_cont tr">Tus recetas</span>
-        <div class="sub_cont">
-            <?php require_once "PHP_index\AñadirMisRecetas.php" ?>
-        </div>
-
         <span class="subt_cont mr">¡ Explora nuevas recetas !</span>
         <div class="sub_cont">
             <?php require_once "PHP_index\AñadirMasRecetas.php" ?>

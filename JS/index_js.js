@@ -63,3 +63,42 @@ ham_btn.onclick = () => {
 close_btn.onclick = () => {
     user.style.color = 'black';
 }
+
+//Eliminar registro
+//evento de los botónes
+const e_btn = document.getElementsByClassName("elim");
+var name = "";
+var ar = new Array(e_btn.length);
+var pos;
+const e_val = document.getElementsByClassName("hiden_value");
+
+for (var i=0; i<e_btn.length; i++) {
+    ar[i] = e_btn[i].getAttribute("value");
+    e_btn[i].addEventListener('click', function() {
+        var val = this.getAttribute("value");
+        var e_txt = document.getElementById("e_txt");
+        e_txt.textContent += '"' + val + '"?';
+    
+        document.getElementById("eliminar_r").classList.toggle("e_visible");
+        name = val;
+        for (var j=0; j<e_btn.length; j++) {
+            if (ar[j] == name) pos = j;
+        }
+        e_val[pos].click();
+    });
+    e_val[i].addEventListener('click', function() {
+        pos = this.getAttribute("value")
+        console.log(pos);
+    })
+}
+//evento del botón "cancelar"
+document.getElementById("cancel").onclick = function() {
+    document.getElementById("eliminar_r").classList.toggle("e_visible");
+    setTimeout(() => {
+        document.getElementById("e_txt").textContent = "¿Está seguro de eliminar la receta ";
+    }, 300);
+}
+//evento de mandar id a EliminarReceta.php
+document.getElementById("delete").onclick = function() {
+    document.getElementById("delete").value = pos;
+}

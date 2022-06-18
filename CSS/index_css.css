@@ -10,6 +10,9 @@ svg {
     position: absolute; 
     z-index: -1;
 }
+#ham_btn {
+    padding-top: 5%;
+}
 
 /* BANNER */
 .banner {
@@ -229,15 +232,64 @@ svg {
 .elim {
     background-color: red;
 }
+.hiden_value {
+    display: none;
+}
 
 /* FRAME - ELIMINAR RECETA */
-.eliminar_r {
-    padding: 2vh 0 0 3vh;
+#eliminar_r {
     position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(26, 8, 0, 0.5);
+    transition: opacity 300ms linear;
 }
-.eliminar_r iframe {
-    width: 500px;
-    height: 1000px;
+.e_invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+}
+.e_visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+}
+#e_con {
+    width: 55vh;
+    height: 25vh;
+    background-color: rgb(85, 35, 29);
+    border: 1px solid rgb(172, 29, 29);
+    color: white;
+    border-radius: 2vh;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 1s ease;
+}
+#e_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#e_con form {
+    width: fit-content;
+}
+.e_btn {
+    border: none;
+    border-radius: 7px;
+    width: 20vh;
+    height: 5vh;
+}
+#delete {
+    margin-right: 4vh;
     background-color: red;
-    position: relative;
+    color: white;
 }
